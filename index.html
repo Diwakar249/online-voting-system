@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Online Voting System</title>
+   <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+<center>
+   <div id="headersection">
+      <h1>Online Voting System</h1>
+   </div>
+   <hr>
+   <h2>Login</h2>
+   <div id="bodysection">
+      <form action="api/login.php" method="post" autocomplete="off">
+         <input type="text" name="mobile" pattern="\d{10}" maxlength="10" placeholder="Enter Mobile" required autocomplete="off"><br><br>
+         <input type="password" name="password" placeholder="Enter Password" required autocomplete="off"><br><br>
+         <select id="dropbox" name="role">
+            <option value="1">Voter</option>
+            <option value="2">Group</option>
+         </select><br><br>
+         <button type="submit" name="loginbutton">Login</button><br><br>
+         New User? <a href="routes/register.html"> Register Here</a>
+      </form>
+      
+   </div>
+</center>
+</body>
+</html>
